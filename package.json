@@ -3,7 +3,7 @@
   "type": "module",
   "packageManager": "yarn@3.2.3",
   "scripts": {
-    "test": "ava",
+    "test": "ava test/*.spec.mjs",
     "lint": "eslint index.mjs src/*.mjs test/*.mjs",
     "lint:fix": "eslint index.mjs src/*.mjs test/*.mjs --fix"
   },
