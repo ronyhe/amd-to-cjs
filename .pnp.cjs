@@ -33,6 +33,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["@babel/generator", "npm:7.18.13"],\
+            ["@babel/parser", "npm:7.18.13"],\
+            ["@babel/types", "npm:7.18.13"],\
             ["ava", "virtual:a7d30b22385736914543d04aeedf870c2f4cdc797efe1e43c36c4e3ce9e1c5492a3c0c70f1cae89748d217d1c6feb35f9fcd9201f1e4faeb307b36f4436e07e2#npm:4.3.3"],\
             ["eslint", "npm:8.22.0"],\
             ["eslint-config-prettier", "virtual:a7d30b22385736914543d04aeedf870c2f4cdc797efe1e43c36c4e3ce9e1c5492a3c0c70f1cae89748d217d1c6feb35f9fcd9201f1e4faeb307b36f4436e07e2#npm:8.5.0"],\
@@ -41,6 +44,58 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.7.1"]\
           ],\
           "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@babel/generator", [\
+        ["npm:7.18.13", {\
+          "packageLocation": "./.yarn/cache/@babel-generator-npm-7.18.13-4c077cf090-27f5e7eb77.zip/node_modules/@babel/generator/",\
+          "packageDependencies": [\
+            ["@babel/generator", "npm:7.18.13"],\
+            ["@babel/types", "npm:7.18.13"],\
+            ["@jridgewell/gen-mapping", "npm:0.3.2"],\
+            ["jsesc", "npm:2.5.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@babel/helper-string-parser", [\
+        ["npm:7.18.10", {\
+          "packageLocation": "./.yarn/cache/@babel-helper-string-parser-npm-7.18.10-cf6fe67f9a-d554a43933.zip/node_modules/@babel/helper-string-parser/",\
+          "packageDependencies": [\
+            ["@babel/helper-string-parser", "npm:7.18.10"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@babel/helper-validator-identifier", [\
+        ["npm:7.18.6", {\
+          "packageLocation": "./.yarn/cache/@babel-helper-validator-identifier-npm-7.18.6-357e4653ab-e295254d61.zip/node_modules/@babel/helper-validator-identifier/",\
+          "packageDependencies": [\
+            ["@babel/helper-validator-identifier", "npm:7.18.6"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@babel/parser", [\
+        ["npm:7.18.13", {\
+          "packageLocation": "./.yarn/cache/@babel-parser-npm-7.18.13-a1d47d8fa5-8b41c35607.zip/node_modules/@babel/parser/",\
+          "packageDependencies": [\
+            ["@babel/parser", "npm:7.18.13"],\
+            ["@babel/types", "npm:7.18.13"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@babel/types", [\
+        ["npm:7.18.13", {\
+          "packageLocation": "./.yarn/cache/@babel-types-npm-7.18.13-d08d55cb26-abc3ad1f3b.zip/node_modules/@babel/types/",\
+          "packageDependencies": [\
+            ["@babel/types", "npm:7.18.13"],\
+            ["@babel/helper-string-parser", "npm:7.18.10"],\
+            ["@babel/helper-validator-identifier", "npm:7.18.6"],\
+            ["to-fast-properties", "npm:2.0.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["@eslint/eslintrc", [\
@@ -96,6 +151,56 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@humanwhocodes-object-schema-npm-1.2.1-eb622b5d0e-a824a1ec31.zip/node_modules/@humanwhocodes/object-schema/",\
           "packageDependencies": [\
             ["@humanwhocodes/object-schema", "npm:1.2.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@jridgewell/gen-mapping", [\
+        ["npm:0.3.2", {\
+          "packageLocation": "./.yarn/cache/@jridgewell-gen-mapping-npm-0.3.2-c64eeb4a4e-1832707a1c.zip/node_modules/@jridgewell/gen-mapping/",\
+          "packageDependencies": [\
+            ["@jridgewell/gen-mapping", "npm:0.3.2"],\
+            ["@jridgewell/set-array", "npm:1.1.2"],\
+            ["@jridgewell/sourcemap-codec", "npm:1.4.14"],\
+            ["@jridgewell/trace-mapping", "npm:0.3.15"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@jridgewell/resolve-uri", [\
+        ["npm:3.1.0", {\
+          "packageLocation": "./.yarn/cache/@jridgewell-resolve-uri-npm-3.1.0-6ff2351e61-b5ceaaf9a1.zip/node_modules/@jridgewell/resolve-uri/",\
+          "packageDependencies": [\
+            ["@jridgewell/resolve-uri", "npm:3.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@jridgewell/set-array", [\
+        ["npm:1.1.2", {\
+          "packageLocation": "./.yarn/cache/@jridgewell-set-array-npm-1.1.2-45b82d7fb6-69a84d5980.zip/node_modules/@jridgewell/set-array/",\
+          "packageDependencies": [\
+            ["@jridgewell/set-array", "npm:1.1.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@jridgewell/sourcemap-codec", [\
+        ["npm:1.4.14", {\
+          "packageLocation": "./.yarn/cache/@jridgewell-sourcemap-codec-npm-1.4.14-f5f0630788-61100637b6.zip/node_modules/@jridgewell/sourcemap-codec/",\
+          "packageDependencies": [\
+            ["@jridgewell/sourcemap-codec", "npm:1.4.14"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@jridgewell/trace-mapping", [\
+        ["npm:0.3.15", {\
+          "packageLocation": "./.yarn/cache/@jridgewell-trace-mapping-npm-0.3.15-7357dbf648-38917e9c2b.zip/node_modules/@jridgewell/trace-mapping/",\
+          "packageDependencies": [\
+            ["@jridgewell/trace-mapping", "npm:0.3.15"],\
+            ["@jridgewell/resolve-uri", "npm:3.1.0"],\
+            ["@jridgewell/sourcemap-codec", "npm:1.4.14"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -271,6 +376,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["amd-to-cjs", "workspace:."],\
+            ["@babel/generator", "npm:7.18.13"],\
+            ["@babel/parser", "npm:7.18.13"],\
+            ["@babel/types", "npm:7.18.13"],\
             ["ava", "virtual:a7d30b22385736914543d04aeedf870c2f4cdc797efe1e43c36c4e3ce9e1c5492a3c0c70f1cae89748d217d1c6feb35f9fcd9201f1e4faeb307b36f4436e07e2#npm:4.3.3"],\
             ["eslint", "npm:8.22.0"],\
             ["eslint-config-prettier", "virtual:a7d30b22385736914543d04aeedf870c2f4cdc797efe1e43c36c4e3ce9e1c5492a3c0c70f1cae89748d217d1c6feb35f9fcd9201f1e4faeb307b36f4436e07e2#npm:8.5.0"],\
@@ -1894,6 +2002,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["jsesc", [\
+        ["npm:2.5.2", {\
+          "packageLocation": "./.yarn/cache/jsesc-npm-2.5.2-c5acb78804-4dc1907711.zip/node_modules/jsesc/",\
+          "packageDependencies": [\
+            ["jsesc", "npm:2.5.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["json-schema-traverse", [\
         ["npm:0.4.1", {\
           "packageLocation": "./.yarn/cache/json-schema-traverse-npm-0.4.1-4759091693-7486074d3b.zip/node_modules/json-schema-traverse/",\
@@ -2976,6 +3093,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/time-zone-npm-1.0.0-0522e3467f-e46f5a69b8.zip/node_modules/time-zone/",\
           "packageDependencies": [\
             ["time-zone", "npm:1.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["to-fast-properties", [\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/to-fast-properties-npm-2.0.0-0dc60cc481-be2de62fe5.zip/node_modules/to-fast-properties/",\
+          "packageDependencies": [\
+            ["to-fast-properties", "npm:2.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\

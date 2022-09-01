@@ -14,5 +14,10 @@
     "eslint-plugin-ava": "^13.2.0",
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.7.1"
+  },
+  "dependencies": {
+    "@babel/generator": "^7.18.13",
+    "@babel/parser": "^7.18.13",
+    "@babel/types": "^7.18.13"
   }
 }
