@@ -1,0 +1,19 @@
+{
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2022
+  },
+  "overrides": [
+    {
+      "files": ["*.spec.*"],
+      "plugins": ["ava"],
+      "rules": {
+        "ava/assertion-arguments": ["error"]
+      }
+    }
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended"
+  ]
+}
