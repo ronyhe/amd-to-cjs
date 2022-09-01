@@ -5,7 +5,8 @@
   "scripts": {
     "test": "ava test/*.spec.mjs",
     "lint": "eslint index.mjs src/*.mjs test/*.mjs",
-    "lint:fix": "eslint index.mjs src/*.mjs test/*.mjs --fix"
+    "lint:fix": "eslint index.mjs src/*.mjs test/*.mjs --fix",
+    "check": "yarn lint && yarn test"
   },
   "devDependencies": {
     "ava": "^4.3.3",
