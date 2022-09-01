@@ -41,7 +41,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-prettier", "virtual:a7d30b22385736914543d04aeedf870c2f4cdc797efe1e43c36c4e3ce9e1c5492a3c0c70f1cae89748d217d1c6feb35f9fcd9201f1e4faeb307b36f4436e07e2#npm:8.5.0"],\
             ["eslint-plugin-ava", "virtual:a7d30b22385736914543d04aeedf870c2f4cdc797efe1e43c36c4e3ce9e1c5492a3c0c70f1cae89748d217d1c6feb35f9fcd9201f1e4faeb307b36f4436e07e2#npm:13.2.0"],\
             ["eslint-plugin-prettier", "virtual:a7d30b22385736914543d04aeedf870c2f4cdc797efe1e43c36c4e3ce9e1c5492a3c0c70f1cae89748d217d1c6feb35f9fcd9201f1e4faeb307b36f4436e07e2#npm:4.2.1"],\
-            ["prettier", "npm:2.7.1"]\
+            ["prettier", "npm:2.7.1"],\
+            ["ramda", "npm:0.28.0"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -384,7 +385,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-prettier", "virtual:a7d30b22385736914543d04aeedf870c2f4cdc797efe1e43c36c4e3ce9e1c5492a3c0c70f1cae89748d217d1c6feb35f9fcd9201f1e4faeb307b36f4436e07e2#npm:8.5.0"],\
             ["eslint-plugin-ava", "virtual:a7d30b22385736914543d04aeedf870c2f4cdc797efe1e43c36c4e3ce9e1c5492a3c0c70f1cae89748d217d1c6feb35f9fcd9201f1e4faeb307b36f4436e07e2#npm:13.2.0"],\
             ["eslint-plugin-prettier", "virtual:a7d30b22385736914543d04aeedf870c2f4cdc797efe1e43c36c4e3ce9e1c5492a3c0c70f1cae89748d217d1c6feb35f9fcd9201f1e4faeb307b36f4436e07e2#npm:4.2.1"],\
-            ["prettier", "npm:2.7.1"]\
+            ["prettier", "npm:2.7.1"],\
+            ["ramda", "npm:0.28.0"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -2695,6 +2697,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/queue-microtask-npm-1.2.3-fcc98e4e2d-b676f8c040.zip/node_modules/queue-microtask/",\
           "packageDependencies": [\
             ["queue-microtask", "npm:1.2.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["ramda", [\
+        ["npm:0.28.0", {\
+          "packageLocation": "./.yarn/cache/ramda-npm-0.28.0-6a5fe8f6cc-44ea6e5010.zip/node_modules/ramda/",\
+          "packageDependencies": [\
+            ["ramda", "npm:0.28.0"]\
           ],\
           "linkType": "HARD"\
         }]\
