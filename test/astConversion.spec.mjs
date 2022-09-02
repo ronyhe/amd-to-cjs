@@ -23,6 +23,14 @@ test('single dep', t => {
     )
 })
 
+test('multiple deps', t => {
+    assertConversion(
+        t,
+        'define(["a", "b"], (a, b) => 1)',
+        'module.exports = (((a, b) => 1))(require("a"), require("b"))'
+    )
+})
+
 function assertConversion(t, actual, expected) {
     assertEqualAst(t, convert(parse(actual)), expected)
 }
