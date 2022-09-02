@@ -4,6 +4,10 @@ import { convert as convertAst } from './astConversion.mjs'
 import _generate from '@babel/generator'
 const generate = _generate.default
 
+/**
+ * @param {string} source - AMD source code
+ * @param {string} fileName - fileName for sourcemap generation
+ */
 export function convert(source, fileName) {
     const ast = parse(source)
     const converted = convertAst(ast)
