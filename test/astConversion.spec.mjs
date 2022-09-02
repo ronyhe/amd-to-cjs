@@ -11,6 +11,10 @@ test('defines with no deps are supported', t => {
     assertConversion(t, 'define(() => 1)', 'module.exports = ((() => 1))()')
 })
 
+test('defines with empty dep arrays are supported', t => {
+    assertConversion(t, 'define([], () => 1)', 'module.exports = ((() => 1))()')
+})
+
 function assertConversion(t, actual, expected) {
     assertEqualAst(t, convert(parse(actual)), expected)
 }
