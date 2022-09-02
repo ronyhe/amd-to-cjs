@@ -43,4 +43,4 @@ As with most code projects, this one builds upon too many other projects to coun
 Without taking away from others' contribution, here are some prominent takeaways:
 - [Wix.com](https://www.wix.com) - The company I work for and for which this was originally developed
 - [esbuild](https://esbuild.github.io/) - A great build tool. This transformation was originally written in order to be able to use esbuild in our codebase at wix
-- [Sindre Sorhus](https://sindresorhus.com/) - A wonderful open source programmer. His code, with slight modification, is used in this repo. See `src/sourceConversion.mjs`
+- [Sindre Sorhus](https://sindresorhus.com/) - An amazingly productive open source programmer. His code, with slight modification, is used in this repo. See `src/sourceConversion.mjs`
