@@ -1,6 +1,6 @@
 import { strict as assert } from 'node:assert'
 import t from '@babel/types'
-import { modifyPath, map } from 'ramda'
+import { modifyPath, map, assocPath } from 'ramda'
 
 const REQUIRE = t.identifier('require')
 const EXPORTS = t.memberExpression(
@@ -32,7 +32,10 @@ function convertDefine(deps, func) {
     const exportsDeclaration = t.assignmentExpression(
         '=',
         EXPORTS,
-        t.callExpression(t.parenthesizedExpression(func), requires)
+        t.callExpression(
+            assocPath(['extra', 'parenthesized'], true, func),
+            requires
+        )
     )
     return t.expressionStatement(exportsDeclaration)
 }
