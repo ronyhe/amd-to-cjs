@@ -7,12 +7,20 @@ test('non-define nodes remain the same', t => {
     assertConversion(t, '1', '1')
 })
 
-test('defines with no deps are supported', t => {
+test('no deps', t => {
     assertConversion(t, 'define(() => 1)', 'module.exports = ((() => 1))()')
 })
 
-test('defines with empty dep arrays are supported', t => {
+test('empty dep array', t => {
     assertConversion(t, 'define([], () => 1)', 'module.exports = ((() => 1))()')
+})
+
+test('single dep', t => {
+    assertConversion(
+        t,
+        'define(["a"], (a) => 1)',
+        'module.exports = (((a) => 1))(require("a"))'
+    )
 })
 
 function assertConversion(t, actual, expected) {
