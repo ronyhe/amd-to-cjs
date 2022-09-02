@@ -41,6 +41,12 @@ function convertDefine(deps, func) {
 }
 
 function splitDepsAndFunc(node) {
+    /**
+     * If `define` has no dependencies, the first argument will be the function:
+     * `define(() => 1)`
+     * It it does, the first argument will be the dependencies and the second argument will be the function:
+     * `define(['dep1'], dep1 => 1)`
+     */
     const hasDeps = node.arguments.length > 1
     if (hasDeps) {
         return [node.arguments[0], node.arguments[1]]
