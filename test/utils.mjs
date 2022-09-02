@@ -5,8 +5,10 @@ const isString = s => typeof s === 'string'
 const toAst = source => (isString(source) ? parse(source) : source)
 
 export function assertEqualAst(t, a, b) {
-    const process = source => removeAstIncidentals(toAst(source))
-    t.deepEqual(process(a), process(b))
+    t.deepEqual(
+        processPossibleAstForEqualityAssertion(a),
+        processPossibleAstForEqualityAssertion(b)
+    )
 }
 
 function removeAstIncidentals(ast) {
@@ -21,4 +23,8 @@ function isIncidental(k, v) {
         ['loc', 'start', 'end', 'parenStart'].includes(k) ||
         (k === 'optional' && v === null)
     )
+}
+
+function processPossibleAstForEqualityAssertion(possibleAst) {
+    return removeAstIncidentals(toAst(possibleAst))
 }
