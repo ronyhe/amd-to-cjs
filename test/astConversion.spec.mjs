@@ -1,6 +1,6 @@
 import test from 'ava'
 import { convert } from '../src/astConversion.mjs'
-import { assertEqualAst } from './utils.mjs'
+import { assertEqualAst } from './astComparison.mjs'
 import { parse } from '@babel/parser'
 
 test('non-define nodes remain the same', t => {

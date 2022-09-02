@@ -1,5 +1,5 @@
 import test from 'ava'
-import { assertEqualAst } from './utils.mjs'
+import { assertEqualAst } from './astComparison.mjs'
 import { parse } from '@babel/parser'
 
 test('identical asts are equal', t => {
