@@ -1,4 +1,5 @@
 # amd-to-cjs
+[![build](https://github.com/ronyhe/amd-to-cjs/actions/workflows/build.yml/badge.svg?event=push)](https://github.com/ronyhe/amd-to-cjs/actions/workflows/build.yml)
 
 This package transforms AMD source code to commonjs format.
 It'll transform this:
