@@ -28,6 +28,21 @@ await fs.writeFile('nowCommon.cjs', converted)
 # Plugin Usage
 The code in this repo was originally created in order to get [esbuild](https://esbuild.github.io/) to handle AMD files.
 It can work as a plugin for other build pipelines as well, which will enable you to use modern tools on your legacy AMD modules.
+```javascript
+import fs from 'node:fs/promises'
+import {convert} from 'amd-to-cjs'
+
+const esubildPlugin = {
+    name: 'example-esbuild-plugin-amd-to-cjs',
+    setup(build) {
+      build.onLoad({filter: /your-amd-directories/}, async args => {
+        const source = await fs.readFile('yourAmdModule.js')
+        const converted = convert(source, 'yourAmdModule.js')
+        return {contents: converted}
+      })    
+    }
+}
+```
 
 # Possible future enhancements:
 - NPM package for easy installation
