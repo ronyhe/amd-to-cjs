@@ -31,7 +31,7 @@ It can work as a plugin for other build pipelines as well, which will enable you
 
 # Possible future enhancements:
 - NPM package for easy installation
-- EsBuild plugin that uses this code
+- [esbuild](https://esbuild.github.io/) plugin that uses this code
 - Configuration options:
   - Parser options
   - Custom parser
