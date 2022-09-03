@@ -30,14 +30,15 @@ The code in this repo was originally created in order to get [esbuild](https://e
 It can work as a plugin for other build pipelines as well, which will enable you to use modern tools on your legacy AMD modules.
 ```javascript
 import fs from 'node:fs/promises'
+import path from 'node:path'
 import {convert} from 'amd-to-cjs'
 
 const esubildPlugin = {
     name: 'example-esbuild-plugin-amd-to-cjs',
     setup(build) {
       build.onLoad({filter: /your-amd-directories/}, async args => {
-        const source = await fs.readFile('yourAmdModule.js')
-        const converted = convert(source, 'yourAmdModule.js')
+        const source = await fs.readFile(args.path)
+        const converted = convert(source, path.basename(args.path))
         return {contents: converted}
       })    
     }
