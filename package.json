@@ -2,6 +2,9 @@
   "name": "amd-to-cjs",
   "type": "module",
   "packageManager": "yarn@3.2.3",
+  "author": "ronyhe",
+  "description": "Convert AMD modules to commonJS modules",
+  "homepage": "https://github.com/ronyhe/amd-to-cjs",
   "scripts": {
     "test": "ava test/*.spec.mjs",
     "test:debug": "ava debug",
