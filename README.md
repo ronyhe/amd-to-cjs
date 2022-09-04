@@ -46,7 +46,6 @@ const esubildPlugin = {
 ```
 
 # Possible future enhancements:
-- NPM package for easy installation
 - [esbuild](https://esbuild.github.io/) plugin that uses this code
 - Configuration options:
   - Parser options
