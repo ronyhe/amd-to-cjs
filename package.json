@@ -5,6 +5,14 @@
   "author": "ronyhe",
   "description": "Convert AMD modules to commonJS modules",
   "homepage": "https://github.com/ronyhe/amd-to-cjs",
+  "bugs": "https://github.com/wix-private/document-management/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ronyhe/amd-to-cjs"
+  },
+  "main": "index.mjs",
+  "keywords": ["amd", "amd to common", "amd to cjs", "convert amd", "migrate amd"],
+  "version": "0.0.1",
   "scripts": {
     "test": "ava test/*.spec.mjs",
     "test:debug": "ava debug",
