@@ -1,6 +1,6 @@
 import { strict as assert } from 'node:assert'
 import t from '@babel/types'
-import { modifyPath, map, assocPath } from 'ramda'
+import { modifyPath, map, assocPath, when } from 'ramda'
 
 const REQUIRE = t.identifier('require')
 const EXPORTS = t.memberExpression(
@@ -12,9 +12,7 @@ export function convert(ast) {
     t.assertFile(ast)
     return modifyPath(
         ['program', 'body'],
-        map(node =>
-            isDefineExpressionNode(node) ? convertDefineExpression(node) : node
-        ),
+        map(when(isDefineExpressionNode, convertDefineExpression)),
         ast
     )
 }
